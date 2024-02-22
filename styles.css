@@ -1,0 +1,1334 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3 {
+    font-family: Molle;
+}
+
+h4,
+q,
+p,
+small,
+nav,
+button,
+form {
+    font-family: Montserrat;
+}
+
+
+/* nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: #222222;
+	color: lightgray;
+} */
+
+body {
+    background-image: linear-gradient(#499BD2, white 10%);
+}
+
+/* header {
+    background-image: linear-gradient(#499BD2, white 60%);
+} */
+
+/*------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header img {
+        width: 200px;
+        padding-bottom: 20px;
+    }
+
+    .sr-only {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+    }
+
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    #menu-toggle input[type="checkbox"] {
+        display: none;
+    }
+
+    #menu-toggle label {
+        display: block;
+        padding: 20px 70px;
+        margin-top: 20px;
+        margin-right: -30px;
+        font-size: 16px;
+        background-color: #F6D64A;
+        border-radius: 5px;
+    }
+
+    #menu-toggle ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: #222222 solid 1px;
+    }
+
+    #menu-toggle input[type="checkbox"]:checked~ul {
+        display: block;
+    }
+
+    #menu-toggle ul li {
+        padding: 10px 20px;
+    }
+
+    #menu-toggle ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    header h1 {
+        margin: 10px auto;
+        width: 390px;
+    }
+
+    header p {
+        margin: 10px auto;
+        width: 390px;
+    }
+
+    #intro h2 {
+        margin: 10px auto;
+        width: 390px;
+        padding-top: 30px;
+    }
+
+    #intro p {
+        margin: 10px auto;
+        width: 390px;
+        line-height: 25px;
+    }
+
+    #intro img,
+    #intro picture {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #plan {
+        background-color: #F6D64A;
+        margin: 0 auto;
+        padding: 50px;
+        text-align: center;
+    }
+
+    #plan h3 {
+        padding: 10px;
+        font-size: 45px;
+    }
+
+    #plan h4 {
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #plan section {
+        border: #fff solid 10px;
+        background-color: #499BD2;
+        margin-top: 20px;
+        padding: 30px;
+    }
+
+    #plan div {
+        margin-top: 20px;
+    }
+
+    #testimonials h3 {
+        padding: 30px;
+        font-size: 45px;
+    }
+
+    #testimonials div {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    #testimonials section {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #testimonials h4 {
+        font-size: 25px;
+        font-weight: bolder;
+        padding-bottom: 5px;
+    }
+
+    #testimonials p,
+    #testimonials q {
+        font-size: 15px;
+    }
+
+    #about {
+        background-color: #499BD2;
+        padding-bottom: 30px;
+    }
+
+    #about h3 {
+        padding: 30px;
+        font-size: 45px;
+    }
+
+    #about div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-right: 35px;
+    }
+
+    #about section {
+        width: 45%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #contact {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #contact h3 {
+        padding: 30px;
+        font-size: 45px;
+    }
+
+    #contact .form-required {
+        font-size: 20px;
+        color: #222222;
+        font-family: Montserrat;
+        font-style: italic;
+    }
+
+    #contact #names {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    #contact #names label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 16px;
+        color: #333;
+    }
+
+    #contact #names input {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 25%;
+        background-color: #9B26B0;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 70%;
+    }
+
+    #nums {
+        margin-bottom: 10px;
+        text-align: c;
+    }
+
+
+    /* Email and phone number input fields */
+    #nums fieldset label {
+        display: inline-flex;
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #nums legend {
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+
+    input[type=radio] {
+        accent-color: #9B26B0;
+        width: 50px;
+        height: 50px;
+    }
+
+    #nums fieldset .radio-label {
+        margin-top: 20px;
+    }
+
+    #nums label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        margin-left: 5%;
+    }
+
+    #nums input[type=email] {
+        width: 87%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #nums input[type=tel] {
+        width: 87%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+    }
+
+
+    /* Destination and travel time select menus */
+
+    label {
+        margin-left: 5%;
+    }
+
+    #selects {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #selects select {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #EAEAEA;
+    }
+
+    footer p {
+        display: inline-flex;
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    footer a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+/*------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+        background-color: white;
+    }
+
+    header {
+        background-color: linear-gradient(#55BCD5 0.2%, white);
+    }
+
+    header img {
+        width: 200px;
+        top: 20px;
+        left: 10px;
+        display: flex;
+        position: relative;
+
+    }
+
+    .sr-only {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+    }
+
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        top: -35px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #menu-toggle input[type="checkbox"] {
+        display: none;
+    }
+
+    #menu-toggle label {
+        display: none;
+    }
+
+    #menu-toggle li {
+        display: block;
+        padding: 20px 30px;
+        margin-top: 30%;
+        font-size: 16px;
+        background-color: #F6D64A;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    #menu-toggle ul {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    main {
+        margin: -20px;
+    }
+
+    header h1 {
+        margin: 10px auto;
+        width: 390px;
+        top: -70px;
+        left: 50px;
+        position: relative;
+    }
+
+
+
+    header p {
+        margin: 10px auto;
+        width: 390px;
+        top: -80px;
+        left: 50px;
+        position: relative;
+    }
+
+    #intro h2 {
+        margin: 10px auto;
+        width: 75%;
+        padding-top: 30px;
+    }
+
+    #intro p {
+        margin: 10px auto;
+        width: 75%;
+        line-height: 25px;
+    }
+
+    #img-grid {
+        text-align: center;
+    }
+
+    #intro img {
+        width: 38%;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline-flex;
+    }
+
+    #intro picture img {
+        width: 80%;
+        padding: 10px;
+    }
+
+    #plan {
+        background-color: #F6D64A;
+        margin: 0 auto;
+        padding: 50px;
+        text-align: center;
+    }
+
+    #plan h3 {
+        padding: 10px;
+        font-size: 45px;
+    }
+
+    #plan h4 {
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 20%;
+    }
+
+    #plan section {
+        display: inline-block;
+        margin: 20px 20px auto;
+        text-align: center;
+        width: 270px;
+        height: 270px;
+        background-color: #499BD2;
+        border: #EAEAEA solid 10px;
+        border-radius: 10px;
+    }
+
+    /* Plan section icons */
+    #plan section img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    #testimonials {
+        margin-bottom: 30px;
+    }
+
+    #testimonials h3 {
+        padding: 30px;
+        font-size: 45px;
+    }
+
+    #testimonials div {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    #testimonials section {
+        display: inline-block;
+        display: inline-block;
+        margin: 20px 20px auto;
+        text-align: center;
+        width: 270px;
+        height: 270px;
+
+        border-radius: 10px;
+    }
+
+    #testimonials h4 {
+        font-size: 25px;
+        font-weight: bolder;
+        padding-bottom: 5px;
+    }
+
+    #testimonials p,
+    #testimonials q {
+        font-size: 15px;
+    }
+
+    #about {
+        background-color: #499BD2;
+        padding-bottom: 30px;
+    }
+
+    #about h3 {
+        padding: 15px 70px;
+        font-size: 45px;
+    }
+
+    #about div {
+        display: flex;
+        justify-content: center;
+        margin-right: 35px;
+    }
+
+    #about section {
+        text-align: center;
+        margin: 10px;
+    }
+
+    #about img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #contact {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #contact h3 {
+        padding: 5% 10% 1%;
+        font-size: 45px;
+    }
+
+    #contact .form-required {
+        font-size: 20px;
+        color: #222222;
+        font-family: Montserrat;
+        font-style: italic;
+    }
+
+    #contact #names {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    #contact #names label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 16px;
+        color: #333;
+    }
+
+    #contact #names input {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+    }
+
+    input[type=text],
+    select {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 25%;
+        background-color: #9B26B0;
+        color: white;
+        padding: 14px 20px;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 65%;
+    }
+
+    #nums {
+        margin-bottom: 10px;
+        text-align: c;
+    }
+
+
+    /* Email and phone number input fields */
+    #nums fieldset label {
+        display: inline-flex;
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-align: center;
+        margin: -30px 76px 10px;
+    }
+
+    #nums legend {
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+
+    input[type=radio] {
+        accent-color: #9B26B0;
+        width: 50px;
+        height: 50px;
+    }
+
+    #nums fieldset .radio-label {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #nums label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        margin-left: 10%;
+    }
+
+    #nums input[type=email] {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #nums input[type=tel] {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+    }
+
+
+    /* Destination and travel time select menus */
+
+    label {
+        margin-left: 10%;
+    }
+
+    #selects {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #selects select {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #EAEAEA;
+    }
+
+    footer p {
+        display: inline-flex;
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    footer a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #000000;
+    }
+
+}
+
+/*------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 968px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+        background-color: white;
+    }
+
+    header {
+        background-color: linear-gradient(#55BCD5 0.2%, white);
+    }
+
+    header img {
+        width: 200px;
+        top: 20px;
+        left: 10px;
+        display: flex;
+        position: relative;
+
+    }
+
+    .sr-only {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+    }
+
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        top: -35px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #menu-toggle input[type="checkbox"] {
+        display: none;
+    }
+
+    #menu-toggle label {
+        display: none;
+    }
+
+    #menu-toggle li {
+        display: block;
+        padding: 20px 30px;
+        margin-top: 30%;
+        font-size: 16px;
+        background-color: #F6D64A;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    #menu-toggle ul {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    main {
+        margin: -20px;
+    }
+
+    header h1 {
+        margin: 10px auto;
+        width: 390px;
+        top: -70px;
+        left: 50px;
+        position: relative;
+    }
+
+
+
+    header p {
+        margin: 10px auto;
+        width: 390px;
+        top: -80px;
+        left: 50px;
+        position: relative;
+    }
+
+    #intro {
+        display: flex;
+        margin-top: 5%;
+    }
+
+    #intro h2 {
+        width: 5%;
+        padding-left: 5%;
+        margin-top: -2%;
+    }
+
+    #intro p {
+        margin: 10% auto;
+        width: 100%;
+        line-height: 25px;
+        margin-top: 5%;
+    }
+
+    #img-grid {
+        text-align: center;
+    }
+
+    #intro img {
+        width: 37%;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline-flex;
+    }
+
+    #intro picture img {
+        width: 80%;
+        padding: 10px;
+    }
+
+    #plan {
+        background-color: #F6D64A;
+        margin: 0 auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    #plan h3 {
+        padding: 10px;
+        font-size: 45px;
+    }
+
+    #plan h4 {
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 20%;
+    }
+
+    #plan div {
+        display: flex;
+    }
+
+    #plan section {
+        margin: 10px 10px auto;
+        text-align: center;
+        width: 250px;
+        height: 250px;
+        background-color: #499BD2;
+        border: #EAEAEA solid 10px;
+        border-radius: 10px;
+    }
+
+    /* Plan section icons */
+    #plan section img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    #testimonials {
+        margin-bottom: 30px;
+        width: 5%;
+    }
+
+    #testimonials h3 {
+        padding: 30px;
+        font-size: 45px;
+    }
+
+    #testimonials div {
+        text-align: center;
+        display: flex;
+        margin-left: 50%;
+    }
+
+    #testimonials section {
+        margin: 20px; 
+    }
+
+    #testimonials h4 {
+        font-size: 25px;
+        font-weight: bolder;
+        padding-bottom: 5px;
+    }
+
+    #testimonials p,
+    #testimonials q {
+        font-size: 15px;
+    }
+
+    #about {
+        background-color: #499BD2;
+        padding-bottom: 30px;
+    }
+
+    #about h3 {
+        padding: 15px 70px;
+        font-size: 45px;
+    }
+
+    #about div {
+        display: flex;
+        justify-content: center;
+        margin-right: 35px;
+    }
+
+    #about section {
+        text-align: center;
+        margin: 10px;
+    }
+
+    #about img {
+        width: 150px;
+        height: 100px;
+    }
+
+    #contact {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #contact h3 {
+        padding: 5% 10% 1%;
+        font-size: 45px;
+    }
+
+    #contact .form-required {
+        font-size: 20px;
+        color: #222222;
+        font-family: Montserrat;
+        font-style: italic;
+    }
+
+    #contact #names {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    #contact #names label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 16px;
+        color: #333;
+    }
+
+    #contact #names input {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+    }
+
+    input[type=text],
+    select {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 25%;
+        background-color: #9B26B0;
+        color: white;
+        padding: 14px 20px;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 65%;
+    }
+
+    #nums {
+        margin-bottom: 10px;
+        text-align: c;
+    }
+
+
+    /* Email and phone number input fields */
+    #nums fieldset label {
+        display: inline-flex;
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-align: center;
+        margin: -30px 76px 10px;
+    }
+
+    #nums legend {
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+
+    input[type=radio] {
+        accent-color: #9B26B0;
+        width: 50px;
+        height: 50px;
+    }
+
+    #nums fieldset .radio-label {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #nums label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        margin-left: 10%;
+    }
+
+    #nums input[type=email] {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #nums input[type=tel] {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+    }
+
+
+    /* Destination and travel time select menus */
+
+    label {
+        margin-left: 10%;
+    }
+
+    #selects {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #selects select {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #9B26B0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: auto;
+        display: block;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #EAEAEA;
+    }
+
+    footer p {
+        display: inline-flex;
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    footer a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #000000;
+    }
+
+}
